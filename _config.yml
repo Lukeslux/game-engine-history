@@ -1,3 +1,8 @@
 source: .
 destination: _site
 exclude: [README.md, Engine Relations.xml]
+
+# General site info
+title: Game Engine History
+author:
+  name: Luc van den Brand
