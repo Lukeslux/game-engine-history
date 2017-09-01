@@ -1,4 +1,3 @@
-# Engine name
 Some introduction to the engine, it's history.
 
 ## The philosopy
