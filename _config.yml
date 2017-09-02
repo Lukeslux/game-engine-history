@@ -1,0 +1,9 @@
+source: .
+destination: _site
+exclude: [README.md, Engine Relations.xml]
+
+# General site info
+title: Game Engine History
+undertitle: A Selective Overview
+author:
+  name: Luc van den Brand
