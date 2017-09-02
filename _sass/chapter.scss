@@ -1,0 +1,28 @@
+.chapter {
+  max-width: 50em;
+  text-align: justify;
+  padding: 1.5em;
+  border-radius: 0.2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5em;
+
+  background-color: white;
+  color: black;
+  box-shadow: 0px 2px 10px #888888;
+
+  font-size: 12pt;
+}
+
+.chapter h1 {
+  font-size: 22pt;
+  margin-top: 0em;
+}
+
+.chapter h2 {
+  font-size: 17pt;
+}
+
+.chapter h3 {
+  font-size: 13pt;
+}
