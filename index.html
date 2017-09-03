@@ -13,7 +13,7 @@ title: Game Engine History
     <div class="chapter">
       <h1> {{ post.title }} </h1>
       {{ post.content }}
-      <div class="page_number"> {{ paginator.page }} </div>
+      <div class="page_number"> {{ paginator.page }}/{{ paginator.total_pages}} </div>
     </div>
   {% endfor %}
 
