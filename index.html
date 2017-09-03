@@ -8,10 +8,34 @@ title: Game Engine History
     <h1> {{ page.title }} </h1>
     <h2> {{ site.undertitle }}</h2>
   </div>
-  {% for post in site.posts %}
+  <!-- Loop trough all chapters -->
+  {% for post in paginator.posts %}
     <div class="chapter">
       <h1> {{ post.title }} </h1>
       {{ post.content }}
+      <div class="page_number"> {{ paginator.page }} </div>
     </div>
   {% endfor %}
+
+  <!-- Pagination links -->
+  <div class="pagination">
+    <span class="previous">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="paginate">⬅</a>
+    {% else %}
+      <span class="paginate">⬅</span>
+    {% endif %}
+    </span>
+
+    {% assign total_float = paginator.total_pages | times: 1.0 %}
+    {% assign fraction = paginator.page | divided_by: total_float %}
+
+    <span class="next">
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="paginate">➡</a>
+    {% else %}
+      <span class="paginate next">➡</span>
+    {% endif %}
+  </span>
+  </div>
 </div>

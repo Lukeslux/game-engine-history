@@ -1,6 +1,11 @@
+# Plugins
+plugins: [jekyll-paginate]
+
+# Compile info
 source: .
 destination: _site
 exclude: [README.md, Engine Relations.xml]
+paginate: 1
 
 # General site info
 title: Game Engine History
